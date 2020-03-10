@@ -14,6 +14,7 @@ LIB = _shapes.so
 INTERFACE = shapes.i
 WRAPPER = shapes_wrap.cxx
 WRAPPER_OBJ = shapes_wrap.o
+PYSCRIPT = shapes.py
 
 .SUFFIXES: $(SUFFIXES) .cpp .h
 .PHONY: clean
@@ -21,7 +22,7 @@ WRAPPER_OBJ = shapes_wrap.o
 all: $(PROG)
 
 clean:
-	rm -f $(PROG) $(OBJ) $(WRAPPER) $(WRAPPER_OBJ) $(LIB)
+	rm -f $(PROG) $(OBJ) $(WRAPPER) $(WRAPPER_OBJ) $(LIB) $(PYSCRIPT)
 
 $(PROG): $(OBJ)
 	$(CC) $(LDFLAGS) -o $@ $(OBJ) $(LPATH) $(LIBS)
