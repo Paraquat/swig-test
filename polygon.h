@@ -1,3 +1,5 @@
+#ifndef POLYGON_H
+#define POLYGON_H
 #include "shape.h"
 
 class Polygon : public Shape {
@@ -14,3 +16,4 @@ class Polygon : public Shape {
         int _number_of_sides;
 
 };
+#endif

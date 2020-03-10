@@ -1,10 +1,5 @@
 #include "circle.h"
 
-Circle::Circle(const Circle& c)
-{
-    _radius = c._radius;
-}
-
 Circle::Circle(double radius)
 {
     _radius = radius;
